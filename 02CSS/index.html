@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            color: blueviolet;
+            font-size: 50px;
+        }
+        .title{
+            color: chartreuse;
+            font-size: 30px;
+        }
+        #title{
+            color: dodgerblue;
+        }
+        #title,.title {
+            font-style: italic;
+            font-size: 40px;
+        }
+        .a {
+            color: gold;
+        }
+    </style>
+    <!-- จากไฟล์ .css -->
+    <link rel="stylesheet" href="external.css">
+</head>
+<body>
+    <h1>Test</h1>
+    <h1 class="title">HTML5</h1>
+    <h1 id="title">CSS3</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo itaque ex magnam qui fuga ipsam, libero reiciendis officia atque sed praesentium odio nesciunt. Animi repellendus odio error at consequuntur.</p>
+    <h2>รูปแบบการประกาศใช้ CSS</h2>
+    <h3>แบบ Internal</h3>
+    <ul>
+        <li type="circle">Inline เป็นการแทรก attribute style ลงในแท็ก HTML เช่น</li>
+        <p style="color: cornflowerblue;">Test Inline</p>
+        <li type="circle">Embeded การกำหนดรูปแบบ style sheet ภายในไฟล์เดียวกันกับไฟล์เว็บ เช่น </li>
+        <p>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;text-align:center;<br>
+                &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </p>
+    </ul>
+    <h3>แบบ External</h3>
+    <ul>
+        <li type="circle">กำหนดไฟล์ style sheet แยกเป็นอีกไฟล์โดยมีนามสกุล .css แล้วค่อยเชื่อมเข้ามาภายในเว็บเพจ เหมาะสำหรับการกำหนดให้หลายๆเว็บเพจใช้รูปแบบ style เดียวกันผ่านการเขียน style แค่ครั้งเดียว เช่น </li>
+        <p>style.css</p>
+        <p>
+            &lt;style&gt;<br>
+            &nbsp;&nbsp;p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color:red;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;text-align:center;<br>
+                &nbsp;&nbsp;}<br>
+            &lt;/style&gt;
+        </p>
+        <p>นำมาใช้ในไฟล์ html</p>
+        &lt;head&gt;<br>
+        &lt;title&gt;  &lt;/title&gt;<br>
+        &lt;link rel="stylesheet" href="style.css"&gt;<br>
+        &lt;/head&gt;
+    </ul>
+    <h3>Test Inline</h3>
+    <p style="color: darkblue;">Hello</p>
+    <h3>Test Embeded</h3>
+    <p class="a">Hello</p>
+    <h3>Test External</h3>
+    <p id="a">HTML</p>
+    
+    
+</body>
+</html>

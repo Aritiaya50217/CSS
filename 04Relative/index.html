@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 100%;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        #a {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+        <h1>หน่วยใน CSS (Relative)แบบอัตราส่วน</h1>
+        <ul>
+            <li type="circle">% เป็นการกำหนดขนาดเป็นเปอร์เซ็นต์ มักใช้กับความกว้างหรือสูง</li>
+            <li type="circle">em อ้างอิงขนาดกับ element parent ที่ใกล้ที่สุด ใช้ในการกำหนดขนาดจำนวนเท่าของขนาดปัจจุบัน เช่น หากขนาดที่ใช้ตอนนี้คือ 10px<br>
+                - ถ้ากำหนดขนาดเป็น 2em จะหมายถึง 2 เท่าของขนาดปัจจุบันคือ 20px<br>
+                - ถ้ากำหนดขนาดเป็น 1.4em จะหมายถึง 1.4 เท่าของขนาดปัจจุบันคือ 14px<br>
+                - ถ้ากำหนดเป็นขนาดเดิมก็กำหนดเป็น lem = 10px
+            </li>
+            <li type="circle">rem กำหนดขนาดโดยอ้างอิงกับ root element ปกติ font-size จะอยู่ที่ 16px
+            </li>
+            <li type="circle">vw ( 1% หรือ 1/100 ของ viewport width )<br>
+            - width ของ browser viewport เท่ากับ 750px ค่า 1vw = 7.5px</li>
+            <li type="circle">vh ( 1% หรือ 1/100 ของ viewport height )<br>
+                - height ของ browser viewport เท่ากับ 900px ค่า 1vh = 9px
+            </li>
+            <li type="circle">vmin,vmax กำหนดค่าต่ำสุดและค่าสูงสุดของ viewport</li>
+        </ul>        
+    </div>
+    <h1>Test %</h1>
+    <p>Hello</p>
+    <h1>Test em</h1>
+    <div id="a">ขนาดเดิม
+        <div id="a">มีขนาดเป็น 2 เท่าจากขนาดปัจจุบัน
+            <div id="a">มีขนาดเป็น 2 เท่าจากขนาดปัจจุบัน
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

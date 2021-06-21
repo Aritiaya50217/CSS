@@ -1,0 +1,13 @@
+โครงสร้างของ CSS
+มีส่วนประกอบอยู่ 2 ส่วน คือ 
+1.Selector คือ แท็ก HTML,ID และ Class ที่ต้องการกำหนดคุณสมบัติ แบ่งออกเป็น 3 รูปแบบ
+    - Element selector คือ การกำหนด style ให้แท็ก HTML โดยตรง
+    - Class Selector คือ การกำหนด style โดยใช้ชื่อ Class เป็น selector โดยใช้เครื่องหมายจุด (.) สามารถมีค่าซ้ำกันได้
+    - ID selector คือ การกำหนด style โดยระบุชื่อ ID เป็นรหัสเฉพาะของแท็กหลังเครื่องหมาย # โดย ID ไม่สามารถกำหนดค่าที่ซ้ำกันได้
+
+2.Declaration ใช้สำหรับกำหนดค่า ให้กับ selector มีส่วนประกอบอยู่ 2 ส่วน
+- Property หรือ Attribute คือ คุณสมบัติที่ต้องการกำหนดให้กับ Selector
+- Value คือ ค่าที่กำหนดให้กับ Property หรือ Attribute
+
+การกำหนดส่วนของ Property และ Value จะแยกด้วยเครื่องหมาย colon(:) ถ้ามากกว่า 1 property จะแยกด้วย (;) รูปแบบดังนี้
+    selector {property:value;property:value...}
