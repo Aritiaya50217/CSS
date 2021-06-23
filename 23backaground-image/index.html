@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: auto;
+            height: 850px;
+        }
+        .box{
+            border: inset silver;
+            border-radius: 15px;
+            margin: 12px;
+            padding: 2px;
+            /* image */
+            background-image: url(./images/vsco-dark-city.jpg);
+            
+        }
+        .box2{
+            border: inset silver;
+            border-radius: 15px;
+            margin: 12px;
+            padding: 2px;
+            background-image: url(./images/w19.jpg);
+            background-repeat: repeat-x;
+        }
+        .box3{
+            border: inset silver;
+            border-radius: 15px;
+            margin: 12px;
+            padding: 2px;
+            background-image: url(./images/w19.jpg);
+            background-repeat: repeat-y;
+        }
+        .box4{
+            border: inset silver;
+            border-radius: 15px;
+            margin: 12px;
+            padding: 2px;
+            background-image: url(./images/black-wallpaper04.jpeg);
+            background-attachment: fixed;
+            color: white;
+        }
+        .box5{
+            border: inset silver;
+            margin: 12px;
+            padding: 2px;
+            background-image: url(./images/w19.jpg);
+            background-attachment: fixed;
+            background-repeat: repeat-y;
+            background-position: center center;
+        }
+        .box6{
+            border: inset silver;
+            border-radius: 15px;
+            margin: 12px;
+            padding: 2px;
+            background-image: url(./images/w19.jpg);
+            background-repeat: repeat-y;
+            background-position: center center;
+            background-size:350px ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>การกำหนดภาพพื้นหลัง (background)</h1>
+    <h3>background-image ใช้เปลี่ยนภาพพื้นหลัง</h3>
+    <li type="circle">background-image: url(รูปภาพ) เช่น  url('image.png')  , url('http://www.unsplash...png')</li><hr>
+    <h1>รูปแบบภาพพื้นหลัง (background-repeat)</h1>
+    <h3>background-image: url(xxx) ;</h3>
+    <h3>background-repeat : xxx ;</h3>
+    <ul>
+        <li type="circle">
+            repeat ค่า default ทำให้ภาพเต็มพื้นที่ของ Element
+        </li>
+        <li type="circle">
+            repeat-x จัดเรียงเฉพาะในแนวแกน x
+        </li>
+        <li type="circle">
+            repeat-y จัดเรียงเฉพาะในแนวแกน y
+        </li>
+        <li type="circle">
+            no-repeat ไม่จัดเรียงแนวแกน x,y แสดงภาพพื้นหลังภาพเดียว
+        </li>
+    </ul><hr>
+    <h1>กำหนดคุณสมบัติพื้นหลัง</h1>
+    <h3>โดยทั่วไปภาพพื้นหลังจะถูกเลื่อนตามการ scroll ของเว็บเบราเซอร์ ถ้าต้องการตรึงภาพพื้นหลังให้อยู่กับที่สามารถทำได้โดยการใช้</h3>
+    <h3>background-attachment</h3>
+    <ul>
+        <li type="circle">scroll คือ การเลื่อนพื้นหลังตาม scrollbar</li>
+        <li type="circle">fixed คือ การตรึงพื้นหลังไว้กับที่</li>
+    </ul>
+    <hr>
+    <h1>กำหนดตำแหน่งพื้นหลัง</h1>
+    <h3>สามารถกำหนดได้ว่าจะเริ่มต้นวางพื้นหลังที่ตำแหน่งใด โดยใช้ background-position เช่น</h3>
+    <h4>background-position : center right ; (กลางขวา)</h4>
+    <ul>
+        <li type="circle">left top หรือ left center หรือ left bottom</li>
+        <li type="circle">right top หรือ right center หรือ rught bottom</li>
+        <li type="circle">center top หรือ center center หรือ center bottom</li>
+    </ul><hr>
+    <h1>กำหนดขนาดภาพ (Background-size)</h1>
+    <h3>background-size : กำหนดค่า</h3>
+    <ul>
+        <li type="circle">auto ค่าปกติภาพเท่าเดิม</li>
+        <li type="circle">px หรือ %</li>
+        <li type="circle">cover ขยายภาพทั้งความกว้าง ความสูงเต็มจอในอัตราส่วนเท่ากัน</li>
+        <li type="circle">contain ขยายภาพทั้งความกว้าง ความสูงชนขอบ Browser</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <h1 align="center">Test Background</h1>
+    <div class="box">
+        <p style="padding: 30px;">Credit : https://photofleem.com/2019/vsco-dark-city</p>
+    </div><hr>
+    <h1 align="center">Test Background Repeat</h1>
+    <li type="circle">background-repeat:repeat-x;</li>
+    <div class="box2">
+        <p style="padding:50px;">Credit : https://men.kapook.com/view119561.html</p>
+    </div><hr>
+    <li type="circle">background-repeat:repeat-y;</li>
+    <div class="box3"></div><hr>
+    <h1 align="center">Test Background Attachment</h1>
+    <div class="box4">
+        <p style="padding:50px;">Credit https://lifestyle.campus-star.com/picpost/83374.html</p>
+    </div><hr>
+    <h1 align="center">Test Background Position </h1>
+    <div class="box5"></div><hr>
+    <h1 align="center">Test Background Size</h1>
+    <div class="box6"></div>
+    
+    
+</body>
+</html>

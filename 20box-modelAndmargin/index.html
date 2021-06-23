@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        div{
+            border:2px dashed blue ;
+            margin-top:10px;
+            margin-bottom: 20px;
+        }
+        .box1{
+            margin-left: 20px;
+        }
+        .box2{
+            margin-right: 20px;
+        }
+        .box3{
+            margin: 10px 30px 20px 30px;
+        }
+        .box4{
+            margin: 20px 60px
+        }
+        img {
+            width: 550px;
+            height: 300px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>การกำหนดพื้นที่รอบ Element</h1>
+    <ul>
+        <li type="circle">Margin กำหนดระยะห่างจากเส้นขอบหรือพื้นที่ภายนอกของ Element เทียบกับวัตถุอื่นๆ (ช่องว่างข้างนอก)</li>
+        <li type="circle">Padding กำหนดพื้นที่ระยะห่างภายใน Element (ช่องว่างข้างใน)</li>
+        <li type="circle">Border กำหนดเส้นขอบ</li>
+    </ul>
+    <p>&nbsp;&nbsp;กำหนดได้ทั้งรูปแบบด้านบน(top) ด้านล่าง(bottom) ด้านขวา(right)และด้านซ้าย (left) ทั้ง margin และ padding เช่น margin-left,margin-right,padding-left,padding-bottom<br>
+    หน่วยที่กำหนดได้ เช่น px,pt,cm อื่นๆ หรือ เปอร์เซ็นต์(%) โดยมีค่า default เป็น 0 </p><hr>
+    <h3>Margin กำหนดระยะห่างจากเส้นขอบหรือพื้นที่ภายนอกของ Element</h3>
+    <ul>
+        <li type="circle">margin: ค่าที่กำหนด ;</li>
+        <li type="circle">margin-left : ค่าที่กำหนด ;</li>
+        <li type="circle">margin-right : ค่าที่กำหนด ;</li>
+        <li type="circle">margin-top : ค่าที่กำหนด ;</li>
+        <li type="circle">margin-bottom : ค่าที่กำหนด ;</li>
+        <li type="circle">margin: auto; (ให้ browser จัดให้เอง ปกติจะกำหนดกึ่งกลาง)</li>
+    </ul><hr>
+    <h1 align="center">Test</h1>
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+    <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, incidunt vero sint id quos atque distinctio nisi fuga nostrum debitis quidem tempora nobis. Accusantium recusandae aliquam laboriosam atque nisi autem.</div>
+    <div class="box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+    <div class="box4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+    <img src="./images/image-8.png">
+    <img src="./images/image-8.png">
+
+</body>
+</html>

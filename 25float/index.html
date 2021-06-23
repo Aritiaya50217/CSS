@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* ให้ box คำนวณตามค่าจริงที่เราระบุ โดยไม่สน padding หรือ margin */
+            box-sizing: border-box;
+        }
+        .container {
+            width: 960px;
+            height: 30px auto;
+        }
+        body {
+            line-height: 1.4em;
+        }
+        .box{
+            background-color: lightgray;
+            border:solid black;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        #Box2 {
+            float: left;
+            width: 70%;
+        }
+        #Box3{
+            float:right;
+            width: 30%;
+        }
+        .clr{
+            /* ไม่อนุญาตให้มีการลอย */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>กำหนดตำแหน่งด้วย float</h1>
+    <h3>float กำหนดให้ Elemant สามารถลอยอยู่ด้านใดด้านหนึ่ง โดยค่าที่กำหนดได้ คือ</h3>
+    <ul>
+        <li type="circle">
+            left,right ให้ลอยอยู่ทางด้านซ้ายและขวาตามลำดับ
+        </li>
+        <li type="circle">
+            inherit ลอยตาม parent element
+        </li>
+        <li type="circle">none ไม่มีการลอย (default)</li>
+    </ul>
+    <h3>clear ไม่อนุญาตให้มีการลอยของ element โดยค่าที่กำหนดได้ คือ </h3>
+    <ul>
+        <li type="circle">
+            left,right ไม่อนุญาตให้ลอยอยู่ทางด้านซ้ายและขวาตามลำดับ
+        </li>
+        <li type="circle">
+            both ไม่อนุญาตให้มีการลอยทั้งสองด้าน
+        </li>
+    </ul><hr>
+    <h1 align="center">Test</h1>
+    <div class="container">
+        <div class="box" id="Box1">
+            <h1>Title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam? Veritatis facilis laboriosam facere minima dignissimos! Officiis laborum voluptatem similique, eos quia vero accusamus minus voluptatibus delectus dolorum natus inventore.</p>
+        </div>
+        <div class="box" id="Box2">
+            <h1>Title 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam? Veritatis facilis laboriosam facere minima dignissimos! Officiis laborum voluptatem similique, eos quia vero accusamus minus voluptatibus delectus dolorum natus inventore.</p>
+        </div>
+        <div class="box" id="Box3">
+            <h1>Title 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam? Veritatis facilis laboriosam facere minima dignissimos! Officiis laborum voluptatem similique, eos quia vero accusamus minus voluptatibus delectus dolorum natus inventore.</p>
+        </div>
+        <!-- clear -->
+        <div class="clr"></div>
+        <div class="box" id="Box4">
+            <h1>Title 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam? Veritatis facilis laboriosam facere minima dignissimos! Officiis laborum voluptatem similique, eos quia vero accusamus minus voluptatibus delectus dolorum natus inventore.</p>
+        </div>
+    </div>
+</body>
+</html>

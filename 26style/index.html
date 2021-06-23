@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none ;
+        }
+        a:link{
+            /* ตัว link เป็นสีเทา */
+            color: gray;
+        }
+        a:visited{
+            /* หลังจากคลิกแล้วจะเป็นสีน้ำเงิน */
+            color: blue;
+        }
+        a:hover{
+            /* เมื่อเอาเมาส์มาวางจะเป็นสีดำ ขีดเส้นใต้ด้วยสีแดง */
+            color: black;
+            text-decoration: underline red;
+        }
+        a:active{
+            /* เมื่อคลิกพื้นหลังจะเป็นสีฟ้า ตัวอักษรสีขาว */
+            background-color: lightskyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>กำหนด style ให้กับ link</h1>
+    <ul>
+        <li type="circle">a:link กำหนด style ให้กับ link ที่ยังไม่ถูกคลิก</li>
+        <li type="circle">a : hover กำหนด style ให้กับ link เมื่อนำเมาส์ไปวาง</li>
+        <li type="circle">a : visited กำหนด style ให้กับ link ที่ถูกคลิกแล้ว</li>
+        <li type="circle">a : active กำหนด style ให้กับ lonk ขณะถูกคลิก</li>
+    </ul><hr>
+    <h1 align="center">Test</h1>
+    <a href="/home">Home</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="/about">About</a>
+</body>
+</html>

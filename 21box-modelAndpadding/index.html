@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        div{
+            border:2px dashed blue ;
+            margin-top:10px;
+            margin-bottom: 20px;
+        }
+        .box1{
+            padding-top: 15px;
+            padding-right: 50px;
+            padding-bottom: 15px;
+            padding-left: 50px;
+        }
+        .box2{
+            /* top,right,bottom,left */
+            padding:15px 50px 15px 50px ;
+        }
+        .box3{
+            /* top,bottom = 15px  */
+            /* left,right = 50px */
+            padding: 15px 50px;
+        }
+        .box4{
+            padding: 50px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>การกำหนดพื้นที่รอบ Element</h1>
+    <h3>Padding กำหนดพื้นที่ระยะห่างภายในของ Element</h3>
+    <ul>
+        <li type="circle">padding: ค่าที่กำหนด ;</li>
+        <li type="circle">padding-left: ค่าที่กำหนด ;</li>
+        <li type="circle">padding-right: ค่าที่กำหนด ;</li>
+        <li type="circle">padding-top: ค่าที่กำหนด ;</li>
+        <li type="circle">padding-bottom: ค่าที่กำหนด ;</li>
+        <li type="circle">padding:auto; (ให้ browser จัดให้เอง ปกติจะกำหนดกึ่งกลาง)</li>
+    </ul>
+    <hr>
+    <h1 align="center">Test Padding</h1>
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+    <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, incidunt vero sint id quos atque distinctio nisi fuga nostrum debitis quidem tempora nobis. Accusantium recusandae aliquam laboriosam atque nisi autem.</div>
+    <div class="box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+    <div class="box4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis doloribus dolores enim itaque molestias praesentium quisquam quod in. Delectus, sed aliquid id quasi neque amet modi nisi illo sapiente dolores?</div>
+
+
+</body>
+</html>

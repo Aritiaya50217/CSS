@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+        }
+        .box{
+            background-color: silver;
+            border-style: dashed;
+            border-color: blue;
+            border-width: 8px;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius:40px;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .box2{
+            background-color: blueviolet;
+            border-radius:200px 20px 200px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>การกำหนดความโค้งเส้นขอบ (radius)</h1>
+    <h3>Border คือ การกำหนดเส้นขอบ โดยมีรูปแบบดังนี้</h3>
+    <ul>
+        <li type="circle">
+            <p>border-radius : <ค่าความโค้ง></p>
+        </li>
+        <li type="circle">
+            <p>border-xxx-radius : <ค่าความโค้ง><br>xxx คือ ทิศทางของรูปแบบเส้นขอบ</p>
+        </li>
+    </ul>
+    <h3>เขียน 4 รูปแบบ</h3>
+    <p>border-radius:10px 5px 15px 20px;</p>
+    <ul>
+        <li type="circle">top-left = 1p px</li>
+        <li type="circle">top-right = 5px</li>
+        <li type="circle">bottom-right = 15px</li>
+        <li type="circle">bottom-left = 20 px</li>
+    </ul>
+    <h3>เขียน 3 รูปแบบ</h3>
+    <p>border-radius:10px 5px 15px;</p>
+    <ul>
+        <li type="circle">top-left = 10 px</li>
+        <li type="circle">top-right,bottom-left = 5px</li>
+        <li type="circle">bottom-right = 15px</li>
+    </ul>
+    <h3>เขียน 2 รูปแบบ</h3>
+    <p>border-radius:10px 5px;</p>
+    <ul>
+        <li type="circle">top-left,bottom-right = 10 px</li>
+        <li type="circle">top-right,bottom-left = 5px</li>
+    </ul>
+    <h3>เขียน 1 รูปแบบ</h3>
+    <p>border-radius:10px;</p>
+    <ul>
+        <li type="circle">ทุกทิศทาง = 10 px</li>
+    </ul>
+    <hr>
+    <h1 align="center">Test</h1>
+    <div class="box"></div><hr>
+    <div class="box2"></div>
+</body>
+</html>
