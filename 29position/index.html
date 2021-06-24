@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 2000px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+            background-color: rgb(3, 3, 207);
+            position: absolute;
+            /* left:50px ; */
+            /* top: 50px; */
+            /* z-index: 1; */
+        }
+        #box2{
+            background-color: rgb(59, 59, 247);
+            /* absolute กำหนดจากขอบของ element ที่บรรจุ */
+            position: absolute;
+            left: 100px;
+        }
+        #box3{
+            background-color: rgb(119, 119, 250);
+            /* absolute กำหนดจากขอบของ element ที่บรรจุ */
+            position: absolute;
+            left: 200px;
+        }
+        #box4{
+            background-color:rgb(145, 145, 241) ;
+            position: absolute;
+            left: 300px;  
+        }
+        #box5{
+            background-color: rgb(176, 176, 241);
+            position: absolute;
+            left: 400px;  
+        }
+        .container{
+            position: relative;
+            width:500px;
+            height: 200px;
+            background-color: lightgrey;
+        }
+        #box6{
+            background-color: rgb(250, 5, 5);
+            position: fixed;
+            top:550px;
+            right:10px;
+        }
+        #box7{
+            background-color: rgb(252, 50, 50);
+        }
+        #box8{
+            background-color: rgb(250, 89, 89);
+        }
+        #box9{
+            background-color: rgb(252, 118, 118);
+        }
+        #box10{
+            background-color: rgb(250, 161, 161);
+        }
+        #box11{
+            background-color:rgb(255, 255, 2);
+        }
+        #box12{
+            background-color:rgb(247, 247, 69);
+        }
+        #box13{
+            background-color:rgb(240, 240, 123);
+        }
+        #box14{
+            background-color:rgb(247, 247, 157);
+        }
+        #box15{
+            background-color:rgb(255, 255, 195);
+            position: fixed;
+            top:500px;
+            left:400px;
+        }
+        .container2{
+            width:500px;
+            height: 200px;
+            background-color: lightgrey;
+            position: sticky;
+            bottom: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>การจัดตำแหน่งด้วย Position</h1>
+    <h3>position ใช้ในการจัดตำแหน่งของวัตถุ</h3>
+    <ul>
+        <li type="circle">static จัดวางแบบปกติเป็นค่า default</li>
+        <li type="circle">relative ใช้ในการจัดวางและกำหนดตำแหน่งวัตถุโดย การนับจากจุดที่วัตถุนั้น ๆ อยู่</li>
+        <li type="circle">absolute ใช้ในการจัดวางวัตถุ ให้ไปอยู่ตำแหน่งใดก็ได้แต่ต้องกำหนดจากขอบของ element ที่บรรจุ วัตถุนั้น ๆ อีกที (ถ้าไม่มีอะไรครอบก็ถือว่า body เป็น element ที่ครอบวัตถุที่ระบุ absolute)</li>
+        <li type="circle">fixed ใช้ในการจัดวางวัตถุให้อยู่ตำแหน่งเดิม</li>
+        <li type="circle">sticky ให้วัตถุติดขอบเมื่อเลื่อนไปถึง</li>
+        </ul><hr>
+        <h1 align="center">Test</h1>
+        <a href="#box14">Test link sticky</a>
+        
+        <div class="container">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+        </div>
+        <hr>
+        <h1 align="center">Test Fixed </h1>
+        <div class="container">
+            <div id="box6" class="box"></div>
+            <div id="box7" class="box"></div>
+        </div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+        <div id="box10" class="box"></div>
+        <hr>
+        <h1 align="center">Test Sticky </h1>
+        <div class="container2">
+            <div id="box11" class="box"></div>
+            <div id="box12" class="box"></div>
+        </div>
+        <div id="box13" class="box"></div>
+        <div id="box14" class="box"></div>
+        <div id="box15" class="box"></div>
+
+        
+</body>
+</html>
