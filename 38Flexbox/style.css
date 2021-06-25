@@ -1,0 +1,39 @@
+.container{
+    width:600px;
+    height: 180px;
+    background-color: lightgrey;
+}
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: large;
+}
+#box1{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 35px;
+    color: white;
+}
+#box2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 220px;
+    color: white;
+}
+#box3{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 405px;
+    color: white;
+}
+h3{
+    margin-left: 350px;
+}
+#move {
+    padding-top: 110px;
+    color: white;
+    text-align: center;
+    font-size: large;
+}

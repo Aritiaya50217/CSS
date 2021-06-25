@@ -1,0 +1,57 @@
+body{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    /* ไม่แสดงข้อความที่อยู่ในแท็ก h1 ทั้งหมด */
+    display:none;
+}
+/* smart phone */
+@media only screen and (max-width:500px){
+    body {
+        /* ถ้าย่อขนาด 500px จอจะกลายเป็นสี cyan */
+        background: black;
+    }
+    /* กำหนด id เพื่อให้ข้อความที่ใช้ id นี้มาแสดง */
+    #smartphone h1 {
+        display: block;
+    }
+}
+/* tablets */
+@media (min-width:501px) and (max-width:768px) {
+    body{
+        background: gray;
+    }
+    #tablets h1{
+        display: block;
+    }
+}
+/* Laptop , desktop*/
+@media (min-width:769px) and (max-width:1024px) {
+    body{
+        background: blue;
+    }
+    #laptop h1{
+         display: block;
+    }
+}
+/* Widescreen */
+@media (min-width:1025px) and (max-width:1200px)  {
+    body{
+        background: red;
+    }
+    #widescreen h1{
+        display: block;
+    }
+}
+/* Landscape */
+@media (min-width:1201px){
+    body{
+        background: green;
+    }
+    #landscape h1 {
+        display: block;
+    }
+}
