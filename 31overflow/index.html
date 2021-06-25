@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px dashed blue;
+            overflow: visible;
+        }
+        .div2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px dashed red;
+            overflow: hidden;
+        }
+        .div3{
+            width: 400px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px dashed green;
+            overflow: scroll;
+        }
+        .div4{
+            width: 400px;
+            height: 100px;
+            background-color: lightgray;
+            border: 1px dashed goldenrod;
+            /* scroll ตามแกน x */
+            overflow-x: scroll ;
+        }
+        .div5{
+            width: 400px;
+            height: 100px;
+            background-color: lightgray;
+            border: 2px dashed yellow;
+            /* scroll ตามแกน y */
+            overflow-y: scroll ;
+        }
+        .div6{
+            width: 400px;
+            height: 100px;
+            background-color: lightgray;
+            border: 2px dashed rgb(255, 217, 0);
+            overflow:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>จำกัดการแสดงผลข้อมูลด้วย Overflow</h1>
+    <p>Overflow</p>
+    <ul>
+        <li type="circle">visible แสดงข้อมูลทั้งหมด</li>
+        <li type="circle">hidden ซ่อนข้อมูลที่เกิน</li>
+        <li type="circle">scroll ให้มี scroll bar แสดงผลเมื่อมีข้อมูลเกิน</li>
+        <ul>
+            <li type="circle">overflow : scroll</li>
+            <li type="circle">overflow-x : scroll</li>
+            <li type="circle">overflow-y : scroll</li>
+        </ul>
+        <li type="circle">auto ให้มี scroll bar แสดงผลออกมาอัตโนมัติ</li>
+    </ul><hr>
+    <h1 align="center">Test Visible</h1>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius id culpa repellendus velit minima eligendi molestiae ducimus quo libero molestias. Ad, illum temporibus asperiores maiores corrupti pariatur eos consectetur aut.</p>
+    </div><br><br><br><hr>
+    <h1 align="center">Test Hidden</h1>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius id culpa repellendus velit minima eligendi molestiae ducimus quo libero molestias. Ad, illum temporibus asperiores maiores corrupti pariatur eos consectetur aut.</p>
+    </div><hr>
+    <h1 align="center">Test Scroll</h1>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius id culpa repellendus velit minima eligendi molestiae ducimus quo libero molestias. Ad, illum temporibus asperiores maiores corrupti pariatur eos consectetur aut.</p>
+    </div><hr>
+    <h1 align="center">Test overflow-x : scroll</h1>
+    <div class="div4">
+        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.........</p>
+    </div><hr>
+    <h1 align="center">Test overflow-y : scroll</h1>
+    <div class="div5">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius id culpa repellendus velit minima eligendi molestiae ducimus quo libero molestias. Ad, illum temporibus asperiores maiores corrupti pariatur eos consectetur aut.</p>
+    </div><hr>
+    <h1 align="center">Test Auto scroll</h1>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius id culpa repellendus velit minima eligendi molestiae ducimus quo libero molestias. Ad, illum temporibus asperiores maiores corrupti pariatur eos consectetur aut.
+        </p>
+    </div><br>
+    <div class="div6">
+        <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        </p>
+    </div>
+
+
+</body>
+</html>

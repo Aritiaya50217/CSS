@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+        }
+        .box1{
+            background-color: blueviolet;
+            /* x y blur spread color */
+            box-shadow: 10px 10px 10px gray;
+        }
+        .box2{
+            background-color:black;
+            box-shadow: 10px -10px 10px gray;
+            color: white;
+            text-align: center
+        }
+        .box3{
+            background-color:red;
+            box-shadow: -10px 10px 10px rgb(247, 134, 134);
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>กำหนดวัตถุด้วย Box-shadow</h1>
+    <h3>box-shadow : x y blur spread color</h3>
+    <ul>
+        <li type="circle">x คือ เงาแกน x (+ ขวา , - ซ้าย )</li>
+        <li type="circle">y คือ เงาแกน y (+ ล่าง , - บน )</li>
+        <li type="circle">blur คือ ขนาดความมัวของเงา</li>
+        <li type="circle">spread คือ ขนาดของเงา</li>
+        <li type="circle">color คือ สีของเงา (color name , rgb,...)</li>
+    </ul><hr>
+    <h1 align="center">Test</h1>
+    <div class="box1"></div><br><br>
+    <div class="box2">แกน y ติดลบ</div><br><br>
+    <div class="box3">แกน x ติดลบ</div>
+</body>
+</html>
