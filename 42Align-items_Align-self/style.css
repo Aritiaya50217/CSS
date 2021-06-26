@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    background-color: rgb(54, 54, 248);
+    flex-direction: column;
+    height: 60vh;
+    border-radius: 10px;
+    color: white;
+}
+.align-stretch{
+    align-items: stretch;
+}
+.align-flex-start{
+    align-items: flex-start;
+}
+.align-center{
+    align-items: center;
+}
+.align-flex-end{
+    align-items: flex-end;
+}
+.item {
+    background-color: dodgerblue;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+}
+.item2{
+    align-self: center;
+}
+.item3 {
+    align-self: flex-end;
+}

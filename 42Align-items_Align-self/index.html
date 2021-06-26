@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Flex Alignment (จัดวางตำแหน่ง item)</h1>
+    <p>**เทียบกับแกนตรงข้าม เช่น <b>กำหนดแกนหลักเป็นแนวนอน</b></p>
+    <p>align-items(item ทุกตัว)และ align-self (item ที่ต้องการ)</p>
+    <li>stretch กำหนดขนาด item เท่ากับขนาด container</li>
+    <li>flex-start ด้านบน container ทิศทางตามแนวนอน</li>
+    <li>center กึ่งกลาง container ทิศทางตามแนวนอน</li>
+    <li>flex-end ด้านล่าง container ทิศทางตามแนวนอน</li><hr>
+    <h1 align="center">Test Align Item</h1>
+    <h3>stretch</h3>
+    <div class="flex-container align-stretch">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+    <h3>flex-start</h3>
+    <div class="flex-container align-flex-start">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+    <h3>center</h3>
+    <div class="flex-container align-center">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+    <h3>flex-end</h3>
+    <div class="flex-container align-flex-end">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item ">
+            <h3>Item 3</h3>
+        </div>
+    </div><hr>
+    <h3>align-self (item ที่ต้องการ)</h3>
+    <div class="flex-container align-flex-strat">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+</html>
