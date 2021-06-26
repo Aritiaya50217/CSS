@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Flex-properties (Items)</h1>
+    <li>flex-shrink : ให้ item หดตัวจำนวนเท่าใดเมื่อเทียบกับ item อื่น ๆ ค่าเริ่มต้นเป็น 1</li>
+    <li>flex-grow : ให้ item ขยายจำนวนเท่าใดเมื่อเทียบกับ item อื่น ๆ ค่าเริ่มต้นเป็น 0</li>
+    <li>flex-basis : กำหนดค่าความยืดหยุ่นเริ่มต้น</li>
+    <li>flex : 1 ทำให้ item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน</li><hr>
+    <h1 align="center">Test</h1>
+    <h3>Flex Shrink</h3>
+    <div class="flex-container">
+        <div class="item item1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 4</h3>
+        </div>
+    </div><hr>
+    <h3>Flex Grow</h3>
+    <div class="flex-container">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 4</h3>
+        </div>
+    </div><hr>
+    <h3>Flex Basis</h3>
+    <div class="flex-container">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item  item3">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item">
+            <h3>Item 4</h3>
+        </div>
+    </div><hr>
+    <h3>Flex</h3>
+    <div class="flex-container">
+        <div class="item">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item">
+            <h3>Item 3</h3>
+        </div>
+        <div class="item item4">
+            <h3>Item 4</h3>
+        </div>
+    </div><hr>
+</body>
+</html>

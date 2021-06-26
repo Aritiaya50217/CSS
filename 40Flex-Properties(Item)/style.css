@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+}
+.item{
+    background-color: gray;
+    border: 1px solid white;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.item1{
+    flex-shrink: 30;
+}
+.item2{
+    flex-grow: 100;
+}
+.item3{
+    flex-basis: 300;
+}
+.item4{
+    /* 3 เท่าของขนาดเดิม */
+    flex:3;
+}

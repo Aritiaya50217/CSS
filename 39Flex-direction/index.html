@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>กำหนดทิศทางด้วย flex-direction</h1>
+    <li>row (ค่าเริ่มต้น) จัดวาง items ในแนวนอนทิศทางเดียวกับแกนหลัก</li>
+    <li>column จัดวาง items ในแนวตั้งทิศทางเดียวกับแกนหลัก</li>
+    <li>row-reverse จัดวาง items ในแนวนอนทิศทางตรงข้ามกับแกนหลัก</li>
+    <li>column-reverse จัดวาง items ในแนวตั้งทิศทางตรงข้ามกับแกนหลัก</li><hr>
+    <h1 align="center">Test Flex Direction</h1>
+    <h3>Flex Container แบบ row</h3>
+    <!-- ใช้ class flex-container กับ class row -->
+    <div class="flex-container row">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+    </div>
+    <h3>Flex Container แบบ column</h3>
+    <div class="flex-container column">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+    </div>
+    <h3>Flex Container แบบ row reverse</h3>
+    <div class="flex-container row-reverse">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+    </div>
+    <h3>Flex Container แบบ column reverse</h3>
+    <div class="flex-container column-reverse">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+    </div><hr>
+    <h1>กำหนดขนาดด้วย flex-wrap</h1>
+    <h3>กรณีที่ขนาด items ใหญ่กว่าพื้นที่ container</h3>
+    <li>nowrap จัดวาง items ที่เกินพื้นที่ container ไปด้านขวามือ</li>
+    <li>wrap จัดวาง items ที่เกินพื้นที่ container เรียงจากบนลงล่าง</li>
+    <li>wrap-reverse จัดวาง items ที่เกินพื้นที่ container เรียงจากล่างขึ้นบน</li><hr>
+    <h1 align="center">Test Flex Wrap</h1>
+    <h3>Nowrap</h3>
+    <div class="flex-container nowrap">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 4</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 5</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 6</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 7</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 8</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 9</h3>
+        </div>
+    </div>
+    <h3>Wrap</h3>
+    <div class="flex-container wrap">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 4</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 5</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 6</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 7</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 8</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 9</h3>
+        </div>
+    </div>
+    <h3>Wrap Reverse</h3>
+    <div class="flex-container wrap-reverse">
+        <div class="item item1">
+            <h3>items 1</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 2</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 3</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 4</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 5</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 6</h3>
+        </div>
+        <div class="item item1">
+            <h3>items 7</h3>
+        </div>
+        <div class="item item2">
+            <h3>items 8</h3>
+        </div>
+        <div class="item item3">
+            <h3>items 9</h3>
+        </div>
+    </div>
+</body>
+</html>
