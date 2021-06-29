@@ -1,0 +1,10 @@
+input[type="email"],input[type="text"]{
+    width: 20%;
+    margin-bottom:5px ;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    color: white;
+    background-color: blue;
+    border-radius:10px ;
+}

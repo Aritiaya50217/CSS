@@ -1,0 +1,40 @@
+li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style:none ;
+}
+/*  
+li:first-child{
+    background-color: lightgray;
+}
+li:last-child {
+    background-color: cornflowerblue;
+}
+/* กำหนด item 3 มีสีน้ำเงิน 
+li:nth-child(3){
+    background-color: blue;
+}
+li:nth-child(5){
+    background-color: yellow;
+}
+/* นับจากล่างขึ้นบน อันที่ 3 นับจากล่าง(item 18)เป็นสีแดง 
+li:nth-last-child(3){
+    background-color: red;
+}
+*/
+/* ทุก ๆ 3 อัน เป็นสีฟ้า
+li:nth-child(3n){
+    background-color: skyblue;
+}
+/* เริ่มนับจากลำดับแรกสุด ทุก ๆ 3 อัน เป็นสีเหลือง 
+li:nth-child(3n+1){
+    background-color: yellow;
+}
+*/
+/* ตำแหน่งเลขคี่เป็นสีเทาเข้ม */
+li:nth-child(odd){
+    background-color: gray;
+}
+li:nth-child(even){
+    background-color: lightgray;
+}

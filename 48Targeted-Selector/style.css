@@ -1,0 +1,13 @@
+p{
+    background-color: orange;
+}
+/* descendent selector */
+div p {
+    /* ตัว p ที่อยู่ใน div ให้มีพื้นหลังสีแดง */
+    background-color: red;
+}
+/* child selector */
+div > p {
+    /* tag p ที่อยู่ใน div จะเป็นสีเทา */
+    background-color: gray;
+}
