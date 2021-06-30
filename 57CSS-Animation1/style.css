@@ -1,0 +1,23 @@
+.box{
+    background-color:black ;
+    width: 100px;
+    height: 100px;
+    /* ตั้งชื่ออะไรก็ได้ */
+    animation-name: animate1;
+    animation-duration: 2s;
+    /* เล่น ... รอบ */
+    animation-iteration-count: infinite;
+    /* เล่นจากด้านหลังมาด้านหน้า */
+    animation-direction:alternate ;
+    animation-timing-function: ease-in ;
+}
+@keyframes animate1 {
+    /* จุดเริ่มต้น */
+    from {
+        width: 100px;
+    }
+    /* จุดสิ้นสุด */
+    to{
+        width:500px;
+    }
+}

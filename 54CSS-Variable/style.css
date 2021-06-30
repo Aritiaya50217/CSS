@@ -1,0 +1,30 @@
+:root{
+    /* กำหนดตัวแปรชื่อและค่า เพื่อนำไปใช้*/
+    --margin:5px;
+    --b:15px;
+    --shadow:5px 5px 20px black;
+    --font:20px;
+}
+.box1{
+    border: 3px dashed black;
+    margin: var(--margin);
+    border-radius: var(--b);
+}
+.box2{
+    border: 3px dashed gray;
+    margin: var(--margin);
+    /* สามารถใช้ตัวแปรอื่น ๆ ร่วมกันได้ */
+    border-radius: var(--font);
+}
+.box3{
+    border: 3px dashed blue;
+    margin: var(--margin);
+}
+.box4{
+    border: 3px solid silver;
+    box-shadow: var(--shadow);
+    margin: 10px;
+    border-radius: var(--b);
+    font-size: var(--font);
+
+}

@@ -1,0 +1,12 @@
+.is-required::before{
+    /* ให้แสดง "*" ไว้หน้า*/
+    content:"*";
+    color: blue;
+    padding-left: 2px;
+}
+.is-required::after{
+    /* ให้แสดง "*" ไว้หลัง */
+    color: red;
+    content: "*";
+    padding-right: 2px;
+}

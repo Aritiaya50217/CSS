@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+.box{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    /* กำหนดคุณสมบัติที่ต้องการเปลี่ยน 
+    transition-property: background-color;
+    /* เริ่มเปลี่ยนภายใน 5 วิ 
+    transition-duration: 5s;
+    transition-timing-function:ease-in-out ;
+    /* เวลาหน่วงก่อนเริ่มเปลี่ยน 
+    transition-delay:2s;
+    */
+    /* แบบย่อ 
+    transition: background-color 0.5s ,width 3s,border-radius 3s ,ease-in-out 0.5s;
+    */
+    /* ลดรูป */
+    transition: all 1s ease-in 0.5s;
+}
+/* กำหนดพฤติกรรม */
+.box:hover{
+    /* เมื่อนำเม้าส์มาชี้ จะเปลี่ยนสี */
+    background-color: blue;
+    border-radius: 50%;
+}

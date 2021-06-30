@@ -1,0 +1,38 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 5px solid silver;
+    margin: 50px;
+    box-shadow: 10px 10px 10px lightgray; 
+
+}
+.box1 {
+    /* ย้ายตำแหน่ง(x,y)  */
+    transform: translate(80px,20px);
+    
+}
+.box2{
+    /* ขยายจากเดิมกี่เท่าจากขนาเดิม scale(x,y) หรือ scale(กี่เท่า)*/
+    transform: scale(1.5,1);
+}
+.box3{
+    /* การหมุน หน่วยดีกรี*/
+    transform: rotate(20deg);
+}
+.box4{
+    /* rotatex(20deg) บีบแนวแกน x 20 ดีกรี */
+    transform: rotateX(60deg);
+}
+.box5{
+    transform: rotateY(50deg); 
+}
+.box6{
+    transform: skew(10deg,20deg);
+}
+.box7{
+    transform:skewX(10deg) 
+}
+.box8{
+    transform:skewY(10deg) 
+}

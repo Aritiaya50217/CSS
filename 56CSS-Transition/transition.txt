@@ -1,0 +1,6 @@
+เปลี่ยนแปลง Element ด้วย Transition
+transition คือ การเปลี่ยนค่าใน element จากค่าหนึ่งไปสู่อีกค่าหนึ่งในช่วงเวลาที่กำหนดปรพกอบด้วย
+- transition-properties คือ รูปแบบคุณสมบัติที่การเปลี่ยนแปลงค่า
+- transition-duration คือ ระยะเวลาในการเปลี่ยนแปลงค่า
+- transition-timing-function คือ รูปแบบฟังก์ชั่นของการเปลี่ยนแปลงค่า (ease-in)
+- transition-delay คือ ระยะเวลาที่จะเริ่มต้นเปลี่ยนแปลงค่า
